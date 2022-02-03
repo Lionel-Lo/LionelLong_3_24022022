@@ -1,15 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 .header {
   display: flex;
   padding-bottom: 12px;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 .header__logo {
   display: flex;
   justify-content: center;
   align-content: center;
   width: 100%;
-  block-size: 35px;
+  block-size: 30px;
 }
 .header a {
   display: flex;
@@ -20,7 +20,7 @@
 .form {
   width: 100%;
   box-shadow: 0 5px 4px -2px #8080804a inset;
-  background-color: #80808026;
+  background-color: #8080802b;
 }
 .form__search {
   display: flex;
@@ -36,19 +36,21 @@
   justify-content: center;
 }
 .form form i {
-  display: flex;
-  width: 31%;
-  justify-content: end;
-  align-items: center;
-  padding-right: 10px;
-  font-size: 20px;
+  width: 29%;
+  padding-right: 15px;
+  font-size: 16px;
+  position: relative;
+  text-align: end;
+  align-self: center;
+  left: 10px;
+  bottom: 2px;
 }
 .form form input {
-  width: 64%;
+  width: 68%;
   border: none;
-  padding-left: 10px;
+  padding-left: 3%;
   background-color: transparent;
-  font-size: 22px;
+  font-size: 16px;
   block-size: 50px;
   outline: none;
 }
@@ -57,8 +59,56 @@
   font-family: Shrikhand;
   src: url(../fonts/Shrikhand/Shrikhand-Regular.ttf);
 }
+h1 {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  padding-left: 25px;
+}
+
+.btn {
+  width: 60%;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  padding: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  box-shadow: 0px 3px 8px gray, 0px 0px 0px gray;
+  background: linear-gradient(#FF79DA, #b21bff);
+  align-self: center;
+  font-size: 15px;
+  font-family: "Roboto";
+  font-weight: 500;
+  color: white;
+}
+
 body {
   margin: 0;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  background-color: #8080800d;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 57px;
+}
+.title--police {
+  padding-right: 15%;
+  padding-left: 15%;
+  margin-bottom: 10px;
+}
+.title .subtitle {
+  font-family: "Roboto";
+  font-weight: 100;
+  margin-top: 10px;
+  margin-bottom: 27px;
+}
+
+section {
+  margin-bottom: 45px;
 }
 
 /*# sourceMappingURL=style.css.map */

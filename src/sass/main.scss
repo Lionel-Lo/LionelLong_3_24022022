@@ -2,7 +2,34 @@
 @import "./layout/form";
 @import "./utils/variable";
 @import "./base/police";
+@import "./composants/button";
+
 
 body{
     margin:0;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    background-color: #8080800d;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 57px;
+    &--police{
+        padding-right: 15%;
+        padding-left: 15%;
+        margin-bottom: 10px;
+    }
+    .subtitle{
+        font-family: 'Roboto';
+        font-weight: 100;
+        margin-top: 10px;
+        margin-bottom: 27px;
+    }
+}
+
+
+
+section{
+    margin-bottom: 45px;
 }

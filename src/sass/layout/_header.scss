@@ -1,14 +1,14 @@
 .header{
     display: flex;
     padding-bottom: 12px;
-    padding-top: 20px;
+    padding-top: 15px;
     
     &__logo{
         display: flex;
         justify-content: center;
         align-content: center;
         width: 100%;
-        block-size: 35px;
+        block-size: 30px;
     }
     & a{
         display: flex;

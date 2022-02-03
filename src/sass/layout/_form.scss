@@ -1,7 +1,7 @@
 .form{
     width: 100%;
     box-shadow: 0 5px 4px -2px #8080804a inset;
-    background-color: #80808026;
+    background-color: #8080802b;
 
     &__search{
         display: flex;
@@ -17,19 +17,21 @@
         justify-content: center;
 
         i{
-            display: flex;
-            width: 31%;
-            justify-content: end;
-            align-items: center;
-            padding-right: 10px;
-            font-size: 20px;
+            width: 29%;
+            padding-right: 15px;
+            font-size: 16px;
+            position: relative;
+            text-align: end;
+            align-self: center;
+            left: 10px;
+            bottom: 2px;
         }
         input{
-            width: 64%;
+            width: 68%;
             border: none;
-            padding-left: 10px;
+            padding-left: 3%;
             background-color: transparent;
-            font-size: 22px;
+            font-size: 16px;
             block-size: 50px;
             outline: none;
         }
