@@ -1,8 +1,11 @@
 @import "./layout/header";
 @import "./layout/form";
 @import "./utils/variable";
+@import "./utils/map";
 @import "./base/police";
 @import "./composants/button";
+@import "./layout/footer";
+@import "./pages/vignindex";
 
 
 body{
@@ -11,14 +14,15 @@ body{
 .title{
     display: flex;
     flex-direction: column;
-    background-color: #8080800d;
+    background-color: map-get($color, color-bg);
     text-align: center;
     padding-top: 20px;
     padding-bottom: 57px;
+    margin-bottom: 55px;
     &--police{
         padding-right: 15%;
         padding-left: 15%;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
     &--police2{
         margin-bottom: 28px;
@@ -26,11 +30,11 @@ body{
     .subtitle{
         font-family: 'Roboto';
         font-weight: 100;
-        margin-top: 10px;
-        margin-bottom: 27px;
+        margin-top: 8px;
+        margin-bottom: 37px;
     }
 }
 
-section{
-    margin-bottom: 45px;
-}
+
+
+
