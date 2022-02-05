@@ -1,12 +1,14 @@
-@import "./layout/header";
-@import "./layout/form";
 @import "./utils/variable";
 @import "./utils/map";
+@import "./utils/mixin";
 @import "./base/police";
+@import "./layout/header";
+@import "./layout/form";
+@import "./layout/menuepage";
 @import "./composants/button";
 @import "./layout/footer";
 @import "./pages/vignindex";
-
+@import "./pages/vignmenue";
 
 body{
     margin:0;
@@ -32,9 +34,14 @@ body{
         font-weight: 100;
         margin-top: 8px;
         margin-bottom: 37px;
+        padding: 0px 20px;
     }
 }
 
 
 
+
+.menue{
+    padding-bottom: 30px;
+}
 

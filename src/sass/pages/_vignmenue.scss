@@ -1,0 +1,48 @@
+.vignmenue{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 13px;
+    margin: 20px 4px;
+    @include box-shadow;
+    &__prix-annim{
+        display: flex;
+        width: 30%;
+        justify-content: end;
+        align-self: flex-end;
+    }
+    &__text{
+        padding-left: 10px;
+        & h2{
+            margin: 3px 0;
+        }
+        & h3{
+            margin: 3px 0;
+        }
+    }
+    &__prix{
+        display: flex;
+        align-self: end;
+        margin-bottom: 9px;
+        font-family: "Roboto";
+        font-weight: 600;
+        width: 26%;
+        padding-right: 10px;
+    }
+    &__annim{
+        height: 70px;
+        width: 0%;
+        transition: all 1s ease;
+            & .fas{
+                display: none;
+            }
+
+    }
+    &:hover{
+        
+        @include check;
+    }
+}

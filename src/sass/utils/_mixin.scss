@@ -1,0 +1,30 @@
+@mixin box-shadow {
+    box-shadow: 0px 5px 7px $color-gray, 0px 0px 0px $color-gray;
+}
+@mixin heart-hover{
+& .far:hover{
+    transition-duration: 1s;
+    font-weight: 900;
+    color: map-get($color, color-primary);
+}
+}
+@mixin check {
+    .vignmenue__annim{
+    width: 70%;
+    background-color: $color-tertiaire;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 13px 13px 0;
+    color: $color-white;
+        & .fas{
+            display: block;
+            font-size: 20px;
+        }
+    }
+}
+@mixin font-roboto-500{
+    font-family: 'Roboto';
+    font-weight: 500;
+}

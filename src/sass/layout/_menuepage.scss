@@ -1,0 +1,53 @@
+.img-menue{
+    width: 95%;
+    object-fit: cover;
+    transform: scaleX(1.1);
+    height: 254px;
+    &--place{
+        width: 100%;
+        height: 254px;
+        object-fit: cover;
+        object-position: 0 -95px;
+    }
+}
+.menue-page{
+    background-color: $color-bg;
+    position: relative;
+    top: -40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 0px 11px;
+    padding-bottom: 80px;
+    margin-bottom: -39px;
+    & .title-page{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0px;
+        & .title__font{
+            font-family: Shrikhand;
+            font-size: 27px;
+        }
+        & .title__heart{
+            font-size: 25px;
+            align-self: center;
+            @include heart-hover;
+        }
+    }
+    &__btn{
+        display: flex;
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+}
+ .title-menue{
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: 'Roboto';
+        font-weight: 300;
+        color: $color-black;
+        border-bottom: 3px solid $color-tertiaire;
+        width: 12%;
+        padding-bottom: 8px;
+        margin-bottom: 14px;
+        
+    }

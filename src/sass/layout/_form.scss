@@ -1,7 +1,7 @@
 .form{
     width: 100%;
-    box-shadow: 0 5px 4px -2px #8080804a inset;
-    background-color: #8080802b;
+    box-shadow: 0 5px 4px -2px $color-bs inset;
+    background-color: $color-bg-form;
 
     &__search{
         display: flex;
