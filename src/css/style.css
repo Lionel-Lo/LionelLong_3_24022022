@@ -10,16 +10,24 @@ h1 {
   padding-left: 25px;
 }
 
-h3 {
-  font-family: "Roboto";
-  font-weight: 100;
-  font-size: 14px;
-}
-
 h2 {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 17px;
+}
+
+h3 {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
+}
+
+h4 {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .header {
@@ -104,7 +112,7 @@ h2 {
 .menue-page .title-page {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0px;
+  padding: 30px 15px;
 }
 .menue-page .title-page .title__font {
   font-family: Shrikhand;
@@ -263,7 +271,7 @@ a .etape__btn__title {
   height: 250px;
   display: flex;
   flex-direction: column;
-  border-radius: 25px;
+  border-radius: 12px;
   margin-bottom: 20px;
   box-shadow: 0px 5px 7px gray, 0px 0px 0px gray;
 }
@@ -271,8 +279,8 @@ a .etape__btn__title {
   width: 100%;
   height: 70%;
   object-fit: cover;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
 }
 .resto a .vignindex__position1 {
   object-position: bottom;
@@ -285,8 +293,8 @@ a .etape__btn__title {
   width: 100%;
   justify-content: space-around;
   height: 30%;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   background: white;
 }
 .resto a .vignindex .text {
@@ -310,6 +318,22 @@ a .etape__btn__title {
   font-weight: 900;
   color: #9356DC;
 }
+.resto .news {
+  display: flex;
+  position: relative;
+  bottom: 94%;
+  padding: 6px 13px;
+  background: #99E2D0;
+  width: 16%;
+  align-self: flex-end;
+  justify-content: center;
+  right: 5%;
+  font-size: 14px;
+  border-radius: 3px;
+  color: #278870;
+  font-family: "Roboto";
+  font-weight: 500;
+}
 
 .vignmenue {
   width: 98%;
@@ -324,38 +348,46 @@ a .etape__btn__title {
 }
 .vignmenue__prix-annim {
   display: flex;
-  width: 30%;
+  width: 29%;
   justify-content: end;
   align-self: flex-end;
 }
 .vignmenue__text {
   padding-left: 10px;
+  white-space: nowrap;
+  width: 71%;
 }
 .vignmenue__text h2 {
   margin: 3px 0;
 }
-.vignmenue__text h3 {
+.vignmenue__text h4 {
   margin: 3px 0;
 }
 .vignmenue__prix {
   display: flex;
   align-self: end;
-  margin-bottom: 9px;
+  margin-bottom: 12px;
   font-family: "Roboto";
   font-weight: 600;
   width: 26%;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 .vignmenue__annim {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 70px;
   width: 0%;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
-.vignmenue__annim .fas {
-  display: none;
+.vignmenue__annim i {
+  color: white;
+  opacity: 0;
+  transform: rotate(90deg);
+  transition: all 0.5s ease;
 }
 .vignmenue:hover .vignmenue__annim {
-  width: 70%;
+  width: 55%;
   background-color: #99E2D0;
   height: 70px;
   display: flex;
@@ -364,9 +396,11 @@ a .etape__btn__title {
   border-radius: 0 13px 13px 0;
   color: white;
 }
-.vignmenue:hover .vignmenue__annim .fas {
-  display: block;
+.vignmenue:hover .vignmenue__annim i {
+  color: white;
+  opacity: 1;
   font-size: 20px;
+  transform: rotate(0deg);
 }
 
 body {

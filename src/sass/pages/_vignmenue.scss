@@ -4,40 +4,49 @@
     align-items: center;
     height: 70px;
     justify-content: space-between;
-    background-color: white;
+    background-color: $color-white;
     border-radius: 13px;
     margin: 20px 4px;
     @include box-shadow;
     &__prix-annim{
         display: flex;
-        width: 30%;
+        width: 29%;
         justify-content: end;
         align-self: flex-end;
     }
     &__text{
         padding-left: 10px;
+        white-space: nowrap;
+        width: 71%;
         & h2{
             margin: 3px 0;
         }
-        & h3{
+        & h4{
             margin: 3px 0;
+            
         }
     }
     &__prix{
         display: flex;
         align-self: end;
-        margin-bottom: 9px;
+        margin-bottom: 12px;
         font-family: "Roboto";
         font-weight: 600;
         width: 26%;
-        padding-right: 10px;
+        padding-right: 20px;
     }
     &__annim{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 70px;
         width: 0%;
-        transition: all 1s ease;
-            & .fas{
-                display: none;
+        transition: all 0.5s ease;
+            & i{
+                color: $color-white;
+                opacity: 0;
+                transform: rotate(90deg);
+                transition: all 0.5s ease;
             }
 
     }

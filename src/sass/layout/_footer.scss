@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     background-color: $color-bg-footer;
-    color: white;
+    color: $color-white;
     padding-top: 26px;
     padding-left: 25px;
     & img{
@@ -16,7 +16,7 @@
         font-weight: 400;
         padding-bottom: 10px;
         & a{
-            color:white;
+            color:$color-white;
         }
     }
     &__icon{
