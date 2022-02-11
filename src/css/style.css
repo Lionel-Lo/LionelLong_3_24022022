@@ -48,6 +48,38 @@ h4 {
   color: black;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000d4;
+  color: white;
+  padding-top: 26px;
+  padding-left: 25px;
+}
+.footer img {
+  filter: invert(1);
+  block-size: 17px;
+}
+.footer__desc {
+  display: flex;
+  font-size: 15px;
+  font-family: "Roboto";
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.footer__desc a {
+  color: white;
+}
+.footer__icon {
+  height: 12px;
+  width: 20px;
+  font-size: 11px;
+  align-self: center;
+}
+.footer__logo {
+  padding-bottom: 17px;
+}
+
 .form {
   width: 100%;
   box-shadow: 0 5px 4px -2px #8080804a inset;
@@ -222,38 +254,109 @@ a .etape__btn__title {
   align-items: center;
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #000000d4;
+/*spin loading*/
+.section-spin {
+  z-index: 1;
+  font-family: Shrikhand;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  transform: translateX(-9999px);
+  background-color: black;
+  height: 999px;
+  line-height: center;
+  font-size: 45px;
   color: white;
-  padding-top: 26px;
-  padding-left: 25px;
+  text-align: center;
+  animation: opacity 10s linear 0.5s;
 }
-.footer img {
-  filter: invert(1);
-  block-size: 17px;
-}
-.footer__desc {
+.section-spin .block {
+  height: 60%;
   display: flex;
-  font-size: 15px;
-  font-family: "Roboto";
-  font-weight: 400;
-  padding-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  /*loader quart de cercle*/
 }
-.footer__desc a {
-  color: white;
+.section-spin .block .loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin-right: 15px;
 }
-.footer__icon {
-  height: 12px;
-  width: 20px;
-  font-size: 11px;
-  align-self: center;
+.section-spin .block .loader-quart {
+  border-radius: 50px;
+  border: 6px solid #ffffff66;
 }
-.footer__logo {
-  padding-bottom: 17px;
+.section-spin .block .loader-quart::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  width: 50px;
+  height: 50px;
+  border: 6px solid transparent;
+  border-radius: 50px;
+  border-top-color: black;
+  -webkit-animation: spin 0.7s linear infinite;
+  animation: spin 0.7s linear infinite;
 }
 
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.8;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  30% {
+    opacity: 0.8;
+    transform: translateX(0);
+  }
+  60% {
+    opacity: 0.5;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+}
 .resto {
   background-color: #f1efef;
   margin-top: 70px;
@@ -356,6 +459,8 @@ a .etape__btn__title {
   padding-left: 10px;
   white-space: nowrap;
   width: 71%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .vignmenue__text h2 {
   margin: 3px 0;

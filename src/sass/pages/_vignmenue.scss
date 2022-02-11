@@ -18,6 +18,8 @@
         padding-left: 10px;
         white-space: nowrap;
         width: 71%;
+        overflow: hidden;
+        text-overflow: ellipsis;
         & h2{
             margin: 3px 0;
         }

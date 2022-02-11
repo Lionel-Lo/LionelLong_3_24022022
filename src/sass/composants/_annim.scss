@@ -1,0 +1,79 @@
+/*spin loading*/
+
+.section-spin{
+    z-index: 1;
+    font-family:Shrikhand;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-9999px);
+    background-color: $color-black;
+    height:999px;
+    line-height:center;
+    font-size:45px;
+    color:white;
+    text-align:center;
+    animation: opacity 10s linear 0.5s;
+        & .block{
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            & .loader{
+                width: 50px;
+                height: 50px;
+                display:inline-block;
+                vertical-align:middle;
+                position: relative;
+                margin-right: 15px;
+            }
+            /*loader quart de cercle*/
+            & .loader-quart{
+            border-radius: 50px;
+            border: 6px solid $color-spinner;
+            }
+            & .loader-quart::after{
+            content:"";
+            position:absolute;
+            top:-6px;
+            left:-6px;
+            bottom:-6px;
+            right:-6px;
+            width: 50px;
+            height: 50px;
+            border: 6px solid transparent;
+            border-radius:50px;
+            border-top-color: $color-black;
+            -webkit-animation: spin 0.7s linear infinite;
+            animation: spin 0.7s linear infinite;
+            }
+        }
+}    
+  
+  @-webkit-keyframes spin{
+    0%{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    100%{-webkit-transform:rotate(360deg);transform:rotate(360deg);}
+  }
+  
+  @keyframes spin{
+    0%{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    100%{-webkit-transform:rotate(360deg);transform:rotate(360deg);}
+  }
+      
+  @-webkit-keyframes opacity{
+    0%{opacity: 1;}
+    30%{opacity: 0.8;}
+    60%{opacity: 0.5;}
+    100%{opacity: 0;}
+  }
+  
+  @keyframes opacity{
+    0%{opacity: 1;
+    transform: translateX(0);}
+    30%{opacity: 0.8;
+    transform: translateX(0);}
+    60%{opacity: 0.5;
+    transform: translateX(0);}
+    100%{opacity: 0;
+    transform: translateX(0);}
+  }
