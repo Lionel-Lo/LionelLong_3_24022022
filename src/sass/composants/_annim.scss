@@ -11,9 +11,9 @@
     height:999px;
     line-height:center;
     font-size:45px;
-    color:white;
+    color:$color-white;
     text-align:center;
-    animation: opacity 10s linear 0.5s;
+    animation: opacity 3s linear 0s;
         & .block{
         height: 60%;
         display: flex;
@@ -76,4 +76,49 @@
     transform: translateX(0);}
     100%{opacity: 0;
     transform: translateX(0);}
+  }
+  
+  /*vignette menue*/
+  .menue-entrees{
+    animation-duration: 2s;
+    animation-name: vignmenue;
+    transform: translateY(0px)
+  }
+  .menue-plats{
+    animation-duration: 4s;
+    animation-name: vignmenue;
+    transform: translateY(0px)
+  }
+  .menue-desserts{
+    animation-duration: 6s;
+    animation-name: vignmenue;
+    transform: translateY(0px)
+  }
+  @keyframes vignmenue{
+    0%{opacity:0; transform: translateY(20px);}
+    100%{opacity:1; transform: translateY(0px);}
+  }
+  .vignmenue:hover{
+    .vignmenue__prix-annim{
+    width: 10%;
+    animation-duration: 2s;
+    animation-name: width;
+    animation-fill-mode: both;
+  }
+  }
+  @keyframes width{
+    0%{width: 10%;}
+    100%{width:29%;}
+  }
+  .vignmenue:hover{
+  .vignmenue__text:hover{
+    width: 90%;
+    animation-duration: 2s;
+    animation-name: width-2;
+    animation-fill-mode: both;
+  }
+  }
+  @keyframes width-2{
+      0%{width:90%;}
+    100%{width:71%;}
   }

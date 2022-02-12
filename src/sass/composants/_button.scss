@@ -13,12 +13,13 @@
     position: relative;
     margin: 0px 15%;
     @include font-roboto-500;
+    &:hover{
+        background: linear-gradient(map-get($color, color-secondaire), darken($color-primary, 10%));
+    }
     & a{
         color: $color-white;
     }
 }
-
-
 /*button fonctionnement*/
 a{
     text-decoration: none;

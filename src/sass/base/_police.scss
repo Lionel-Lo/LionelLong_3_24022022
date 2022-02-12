@@ -9,16 +9,22 @@ h1{
     font-size: 24px;
     font-weight: 500;
     padding-left: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 h2{
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 h3{
     font-family: 'Roboto';
     font-weight: 300;
     font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 h4{
     font-family: 'Roboto';
@@ -26,4 +32,5 @@ h4{
     font-size: 14px;
     overflow: hidden;
     text-overflow: ellipsis;
+    
 }
