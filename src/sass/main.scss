@@ -2,109 +2,14 @@
 @import "./utils/map";
 @import "./utils/mixin";
 @import "./base/police";
+@import "./base/reset";
+@import "./composants/button";
+@import "./composants/annim";
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/form";
 @import "./layout/menuepage";
-@import "./composants/button";
-@import "./composants/annim";
+@import "./pages/accueil";
 @import "./pages/vignindex";
 @import "./pages/vignmenue";
-
-body{
-    margin:0;
-}
-.title{
-    display: flex;
-    flex-direction: column;
-    background-color: map-get($color, color-bg);
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 57px;
-    margin-bottom: 55px;
-    &--police{
-        padding-right: 15%;
-        padding-left: 15%;
-        margin-bottom: 8px;
-    }
-    &--police2{
-        margin-bottom: 28px;
-    }
-    .subtitle{
-        font-family: 'Roboto';
-        font-weight: 100;
-        margin-top: 8px;
-        margin-bottom: 37px;
-        padding: 0px 20px;
-    }
-}
-
-
-
-
-.menue{
-    padding-bottom: 30px;
-}
-
-.etape{
-    @include min-width-700px {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;}
-}
-.flex{
-    @include min-width-700px {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;}
-    & a{
-        @include min-width-700px {
-            margin: 20px 0px;
-            width: 290px;
-        }
-    }
-}
-.footer{
-    @include min-width-700px{
-        align-items: center;
-        & img{
-            @include min-width-700px{
-                block-size: 35px;
-            }
-        }
-        &__desc{
-            @include min-width-700px{
-                font-size: 20px;
-            }
-        }
-    }
-}
-.img-menue{
-    @include min-width-700px{
-        height: 500px;
-        &--place{
-            @include min-width-700px{
-                height: 500px;
-            }
-        }
-    }
-}
-.title-menue{
-    @include min-width-700px{
-        width: 3%;
-        
-    }
-}
-.flex-menue{
-    @include min-width-700px{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        & .vignmenue{
-            @include min-width-700px{
-                width: 30%;
-            }
-        }
-    }
-}
+@import "./pages/media-query";

@@ -1,13 +1,16 @@
 .img-menue{
     width: 95%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     transform: scaleX(1.1);
     height: 254px;
     &--place{
         width: 100%;
         height: 254px;
-        object-fit: cover;
-        object-position: 0 -95px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: 0 -95px;
+           object-position: 0 -95px;
     }
 }
 .menue-page{

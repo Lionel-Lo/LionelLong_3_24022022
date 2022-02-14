@@ -10,14 +10,12 @@
     @include box-shadow;
     &__prix-annim{
         display: flex;
-        /*width: 29%;*/
-        justify-content: end;
+        justify-content: flex-end;
         align-self: flex-end;
     }
     &__text{
         padding-left: 10px;
         white-space: nowrap;
-        /*width: 71%;*/
         overflow: hidden;
         text-overflow: ellipsis;
         & h2{
@@ -43,7 +41,6 @@
         justify-content: center;
         height: 70px;
         width: 0%;
-        /*transition: left 0.5s ease;*/
             & i{
                 color: $color-white;
                 opacity: 0;

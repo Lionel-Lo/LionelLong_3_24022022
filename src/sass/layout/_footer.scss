@@ -6,7 +6,8 @@
     padding-top: 26px;
     padding-left: 25px;
     & img{
-        filter: invert(1);
+        -webkit-filter: invert(1);
+                filter: invert(1);
         block-size: 17px;
     }
     &__desc{

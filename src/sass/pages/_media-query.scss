@@ -1,0 +1,67 @@
+.etape{
+    @include min-width-700px {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;}
+}
+.flex{
+    @include min-width-700px {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;}
+    & a{
+        @include min-width-700px {
+            margin: 20px 0px;
+            width: 290px;
+        }
+    }
+}
+.footer{
+    @include min-width-700px{
+        align-items: center;
+        & img{
+            @include min-width-700px{
+                block-size: 35px;
+            }
+        }
+        &__desc{
+            @include min-width-700px{
+                font-size: 20px;
+            }
+        }
+    }
+}
+.img-menue{
+    @include min-width-700px{
+        height: 500px;
+        &--place{
+            @include min-width-700px{
+                height: 500px;
+            }
+        }
+    }
+}
+.title-menue{
+    @include min-width-700px{
+        width: 3%;
+        
+    }
+}
+.flex-menue{
+    @include min-width-700px{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        & .vignmenue{
+            @include min-width-700px{
+                width: 30%;
+            }
+        }
+    }
+}
+.form form input{
+    @include min-width-700px{
+        width: 40%;
+    }
+}

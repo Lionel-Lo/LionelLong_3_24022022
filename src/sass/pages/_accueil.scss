@@ -1,0 +1,24 @@
+.title{
+    display: flex;
+    flex-direction: column;
+    background-color: map-get($color, color-bg);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 57px;
+    margin-bottom: 55px;
+    &--police{
+        padding-right: 15%;
+        padding-left: 15%;
+        margin-bottom: 8px;
+    }
+    &--police2{
+        margin-bottom: 28px;
+    }
+    .subtitle{
+        font-family: 'Roboto';
+        font-weight: 100;
+        margin-top: 8px;
+        margin-bottom: 37px;
+        padding: 0px 20px;
+    }
+}
