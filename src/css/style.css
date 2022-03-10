@@ -271,14 +271,17 @@ a .etape__btn__title {
     transform: translateY(0px);
   }
 }
+/*vignette menue hover*/
 .vignmenue:hover .vignmenue__prix-annim {
   width: 10%;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
   -webkit-animation-name: width;
   animation-name: width;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
 }
 
 @-webkit-keyframes width {
@@ -299,12 +302,14 @@ a .etape__btn__title {
 }
 .vignmenue:hover .vignmenue__text:hover {
   width: 90%;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
   -webkit-animation-name: width-2;
   animation-name: width-2;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
 }
 
 @-webkit-keyframes width-2 {
@@ -635,7 +640,7 @@ a .etape__btn__title {
   color: white;
   opacity: 0;
   transform: rotate(190deg);
-  transition: all 1s ease;
+  transition: all 0.3s ease;
 }
 .vignmenue:hover .vignmenue__annim {
   width: 55%;

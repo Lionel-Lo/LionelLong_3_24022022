@@ -109,12 +109,14 @@
   .vignmenue:hover{
     .vignmenue__prix-annim{
     width: 10%;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
     -webkit-animation-name: width;
             animation-name: width;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
   }
   }
   @-webkit-keyframes width{
@@ -128,12 +130,15 @@
   .vignmenue:hover{
   .vignmenue__text:hover{
     width: 90%;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
     -webkit-animation-name: width-2;
             animation-name: width-2;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+            
   }
   }
   @-webkit-keyframes width-2{
