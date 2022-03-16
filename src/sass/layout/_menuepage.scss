@@ -33,7 +33,16 @@
         & .title__heart{
             font-size: 25px;
             align-self: center;
-            @include heart-hover;
+            & .full{
+                position: absolute;
+                opacity: 0;
+                background:-webkit-linear-gradient(top, $color-primary 25%, $color-secondaire 75%);
+                background-clip:text;
+                -webkit-background-clip:text;
+                color:transparent;
+                right: 26px;
+                top: 37px;
+            }
         }
     }
     &__btn{

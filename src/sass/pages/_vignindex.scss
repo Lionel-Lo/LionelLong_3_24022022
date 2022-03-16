@@ -56,7 +56,15 @@
                     align-items: center;
                     padding-right: 10px;
                     font-size: 25px;
-                    @include heart-hover;
+                    /*@include heart-hover;*/
+                }
+                & .full{
+                    position: absolute;
+                    opacity: 0;
+                    background:-webkit-linear-gradient(top, $color-primary 25%, $color-secondaire 75%);
+                    background-clip:text;
+                    -webkit-background-clip:text;
+                    color:transparent;
                 }
             }
         }

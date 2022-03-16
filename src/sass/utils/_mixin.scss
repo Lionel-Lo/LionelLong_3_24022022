@@ -4,13 +4,6 @@
         box-shadow: 0px 8px 7px $color-gray, 0px 0px 0px $color-gray;
     }
 }
-@mixin heart-hover{
-& .far:hover{
-    transition-duration: 5s;
-    font-weight: 900;
-    color: map-get($color, color-primary);
-}
-}
 @mixin check {
     .vignmenue__annim{
     width: 55%;

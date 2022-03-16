@@ -328,6 +328,19 @@ a .etape__btn__title {
     width: 71%;
   }
 }
+/*heart full*/
+.full:hover {
+  animation: opacity1 300ms 0ms linear both;
+}
+
+@keyframes opacity1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .header {
   display: flex;
   padding: 15px 20px;
@@ -456,10 +469,15 @@ a .etape__btn__title {
   font-size: 25px;
   align-self: center;
 }
-.menue-page .title-page .title__heart .far:hover {
-  transition-duration: 5s;
-  font-weight: 900;
-  color: #9356DC;
+.menue-page .title-page .title__heart .full {
+  position: absolute;
+  opacity: 0;
+  background: -webkit-linear-gradient(top, #9356DC 25%, #FF79DA 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  right: 26px;
+  top: 37px;
 }
 .menue-page__btn {
   display: flex;
@@ -568,11 +586,15 @@ a .etape__btn__title {
   align-items: center;
   padding-right: 10px;
   font-size: 25px;
+  /*@include heart-hover;*/
 }
-.resto a .vignindex__heart .far:hover {
-  transition-duration: 5s;
-  font-weight: 900;
-  color: #9356DC;
+.resto a .vignindex .full {
+  position: absolute;
+  opacity: 0;
+  background: -webkit-linear-gradient(top, #9356DC 25%, #FF79DA 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .resto .news {
   display: flex;

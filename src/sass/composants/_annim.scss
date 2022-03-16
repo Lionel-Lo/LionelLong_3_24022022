@@ -149,3 +149,16 @@
       0%{width:90%;}
     100%{width:71%;}
   }
+
+  /*heart full*/
+  .full:hover{
+    animation: opacity1 300ms 0ms linear both;
+}
+@keyframes opacity1{
+0%{
+    opacity: 0;
+}
+100%{
+    opacity: 1;
+}
+}
